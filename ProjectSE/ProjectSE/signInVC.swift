@@ -35,7 +35,7 @@ class signInVC: UIViewController {
             self.presentViewController(alert, animated:true,completion: nil)
         }
         
-        PFUser.logInWithUsernameInBackground("asdd", password: "asd") { (user:PFUser?, error:NSError?) -> Void in
+        PFUser.logInWithUsernameInBackground(usernametxt.text!, password: passwordtxt.text!) { (user:PFUser?, error:NSError?) -> Void in
             
             print(error)
             if error == nil {

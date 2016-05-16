@@ -105,12 +105,15 @@ class signUpVC: UIViewController ,UIImagePickerControllerDelegate,UINavigationCo
                 alert.addAction(ok)
                 self.presentViewController(alert, animated: true, completion: nil)
         }
-        if passwordTxt.text != repeatTxt.text {
+        else if passwordTxt.text != repeatTxt.text {
             let alert = UIAlertController(title: "PASSWORD", message: "do not match", preferredStyle: UIAlertControllerStyle.Alert)
             let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: nil )
             alert.addAction(ok)
             self.presentViewController(alert, animated: true, completion: nil)
         }
+        
+        else{
+            
         
         let user = PFUser()
         user.username = usernameTxt.text?.lowercaseString
@@ -154,7 +157,7 @@ class signUpVC: UIViewController ,UIImagePickerControllerDelegate,UINavigationCo
             }
         }
         
-        
+        }
     }
     
     @IBAction func cancelBtn(sender: AnyObject) {

@@ -53,6 +53,7 @@
 		DAB7B3BD1CE4F0EB006C5248 /* homevc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5212CD1CDC7F51004EB951 /* homevc.swift */; };
 		DAB7B3BE1CE4F0EB006C5248 /* headervc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5212CF1CDC7F7B004EB951 /* headervc.swift */; };
 		DAB7B3BF1CE4F0EB006C5248 /* cellpic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5212D11CDC80D2004EB951 /* cellpic.swift */; };
+		DAC8036D1CEA04EC00745204 /* ProjectSEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8036C1CEA04EC00745204 /* ProjectSEUITests.swift */; };
 		DACAB1DB1CE46BAA009A8A58 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACAB1D91CE46BAA009A8A58 /* Bolts.framework */; };
 		DACAB1DC1CE46BAA009A8A58 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACAB1DA1CE46BAA009A8A58 /* Parse.framework */; };
 		DADC1CE11CAD78E200313AA8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADC1CE01CAD78E200313AA8 /* AudioToolbox.framework */; };
@@ -69,6 +70,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		DAB7B3811CE4D627006C5248 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAB319C61CA652C9009282DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAB319CD1CA652C9009282DC;
+			remoteInfo = ProjectSE;
+		};
+		DAC8036F1CEA04EC00745204 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DAB319C61CA652C9009282DC /* Project object */;
 			proxyType = 1;
@@ -98,6 +106,9 @@
 		DAB7B37C1CE4D627006C5248 /* ProjectSETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectSETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB7B37E1CE4D627006C5248 /* ProjectSETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSETests.swift; sourceTree = "<group>"; };
 		DAB7B3801CE4D627006C5248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC8036A1CEA04EC00745204 /* ProjectSEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectSEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC8036C1CEA04EC00745204 /* ProjectSEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSEUITests.swift; sourceTree = "<group>"; };
+		DAC8036E1CEA04EC00745204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DACAB1D91CE46BAA009A8A58 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		DACAB1DA1CE46BAA009A8A58 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		DADC1CE01CAD78E200313AA8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -151,6 +162,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAC803671CEA04EC00745204 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -160,6 +178,7 @@
 				DADC1CF41CAD796000313AA8 /* framework */,
 				DAB319D01CA652C9009282DC /* ProjectSE */,
 				DAB7B37D1CE4D627006C5248 /* ProjectSETests */,
+				DAC8036B1CEA04EC00745204 /* ProjectSEUITests */,
 				DAB319CF1CA652C9009282DC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -169,6 +188,7 @@
 			children = (
 				DAB319CE1CA652C9009282DC /* ProjectSE.app */,
 				DAB7B37C1CE4D627006C5248 /* ProjectSETests.xctest */,
+				DAC8036A1CEA04EC00745204 /* ProjectSEUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,7 +200,6 @@
 				DA7D5F081CDCCF390096773F /* 621-131018032747.jpg */,
 				DA7D5F091CDCCF390096773F /* rcfAEh.gif */,
 				DAB319FE1CA7F2ED009282DC /* Screen Shot 2559-03-20 at 20.07.53.png */,
-				DAB319E51CA65829009282DC /* signUpVC.swift */,
 				DAB319E71CA65850009282DC /* resetPasswordVC.swift */,
 				DAB319D11CA652C9009282DC /* AppDelegate.swift */,
 				DAB319D31CA652C9009282DC /* ViewController.swift */,
@@ -191,6 +210,7 @@
 				DA5212CD1CDC7F51004EB951 /* homevc.swift */,
 				DA5212CF1CDC7F7B004EB951 /* headervc.swift */,
 				DA5212D11CDC80D2004EB951 /* cellpic.swift */,
+				DAB319E51CA65829009282DC /* signUpVC.swift */,
 				DAB319E31CA6580A009282DC /* signInVC.swift */,
 			);
 			path = ProjectSE;
@@ -203,6 +223,15 @@
 				DAB7B3801CE4D627006C5248 /* Info.plist */,
 			);
 			path = ProjectSETests;
+			sourceTree = "<group>";
+		};
+		DAC8036B1CEA04EC00745204 /* ProjectSEUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAC8036C1CEA04EC00745204 /* ProjectSEUITests.swift */,
+				DAC8036E1CEA04EC00745204 /* Info.plist */,
+			);
+			path = ProjectSEUITests;
 			sourceTree = "<group>";
 		};
 		DADC1CF41CAD796000313AA8 /* framework */ = {
@@ -262,6 +291,24 @@
 			productReference = DAB7B37C1CE4D627006C5248 /* ProjectSETests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DAC803691CEA04EC00745204 /* ProjectSEUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC803731CEA04EC00745204 /* Build configuration list for PBXNativeTarget "ProjectSEUITests" */;
+			buildPhases = (
+				DAC803661CEA04EC00745204 /* Sources */,
+				DAC803671CEA04EC00745204 /* Frameworks */,
+				DAC803681CEA04EC00745204 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAC803701CEA04EC00745204 /* PBXTargetDependency */,
+			);
+			name = ProjectSEUITests;
+			productName = ProjectSEUITests;
+			productReference = DAC8036A1CEA04EC00745204 /* ProjectSEUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -277,6 +324,11 @@
 						DevelopmentTeam = 5TK875P836;
 					};
 					DAB7B37B1CE4D627006C5248 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5TK875P836;
+						TestTargetID = DAB319CD1CA652C9009282DC;
+					};
+					DAC803691CEA04EC00745204 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 5TK875P836;
 						TestTargetID = DAB319CD1CA652C9009282DC;
@@ -298,6 +350,7 @@
 			targets = (
 				DAB319CD1CA652C9009282DC /* ProjectSE */,
 				DAB7B37B1CE4D627006C5248 /* ProjectSETests */,
+				DAC803691CEA04EC00745204 /* ProjectSEUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -331,6 +384,13 @@
 				DAB7B3B91CE4F0D8006C5248 /* LaunchScreen.storyboard in Resources */,
 				DAB7B3AF1CE4F0C9006C5248 /* 621-131018032747.jpg in Resources */,
 				DAB7B3B81CE4F0D4006C5248 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC803681CEA04EC00745204 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +428,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAC803661CEA04EC00745204 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC8036D1CEA04EC00745204 /* ProjectSEUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -375,6 +443,11 @@
 			isa = PBXTargetDependency;
 			target = DAB319CD1CA652C9009282DC /* ProjectSE */;
 			targetProxy = DAB7B3811CE4D627006C5248 /* PBXContainerItemProxy */;
+		};
+		DAC803701CEA04EC00745204 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAB319CD1CA652C9009282DC /* ProjectSE */;
+			targetProxy = DAC8036F1CEA04EC00745204 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -545,6 +618,30 @@
 			};
 			name = Release;
 		};
+		DAC803711CEA04EC00745204 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ProjectSEUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.earth.SoftEn.ProjectSEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ProjectSE;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DAC803721CEA04EC00745204 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ProjectSEUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.earth.SoftEn.ProjectSEUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ProjectSE;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -571,6 +668,15 @@
 			buildConfigurations = (
 				DAB7B3831CE4D627006C5248 /* Debug */,
 				DAB7B3841CE4D627006C5248 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC803731CEA04EC00745204 /* Build configuration list for PBXNativeTarget "ProjectSEUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC803711CEA04EC00745204 /* Debug */,
+				DAC803721CEA04EC00745204 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
