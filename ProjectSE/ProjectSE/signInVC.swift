@@ -37,7 +37,7 @@ class signInVC: UIViewController {
         
         PFUser.logInWithUsernameInBackground(usernametxt.text!, password: passwordtxt.text!) { (user:PFUser?, error:NSError?) -> Void in
             
-            print(error)
+            //print(error)
             if error == nil {
                 NSUserDefaults.standardUserDefaults().setObject(user!.username, forKey: "username")
                 NSUserDefaults.standardUserDefaults().synchronize()

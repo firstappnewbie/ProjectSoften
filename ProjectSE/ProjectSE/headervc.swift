@@ -26,4 +26,12 @@ class headervc: UICollectionReusableView {
     
     
     @IBOutlet weak var button: UIButton!
+
+
+    override func awakeFromNib() {
+        //let width = UIScreen.mainScreen().bounds.width
+        //avaImg.frame = CGRectMake(width / 16, width / 16, width / 4, width / 4)
+        avaImg.layer.cornerRadius = avaImg.frame.size.width / 2
+        avaImg.clipsToBounds = true
+    }
 }

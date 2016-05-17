@@ -14,8 +14,17 @@ class navVC: UINavigationController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        self.navigationBar.tintColor = .whiteColor()
+        self.navigationBar.barTintColor = UIColor(red: 46.0/255.0, green: 179.0/255.0, blue: 90.0/255.0, alpha: 1)
+        self.navigationBar.translucent = false
+        
     }
 
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

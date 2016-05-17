@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DA1C06A01CE5D6DF00D1A2FF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAB7B3801CE4D627006C5248 /* Info.plist */; };
+		DA4A72891CEA34DD00B41999 /* sightsee.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DA4A72881CEA34DD00B41999 /* sightsee.jpeg */; };
+		DA4A728B1CEACF1100B41999 /* uploadvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A728A1CEACF1100B41999 /* uploadvc.swift */; };
 		DA5212CE1CDC7F51004EB951 /* homevc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5212CD1CDC7F51004EB951 /* homevc.swift */; };
 		DA5212D01CDC7F7B004EB951 /* headervc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5212CF1CDC7F7B004EB951 /* headervc.swift */; };
 		DA5212D21CDC80D2004EB951 /* cellpic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5212D11CDC80D2004EB951 /* cellpic.swift */; };
@@ -66,6 +68,13 @@
 		DADC1CEF1CAD793100313AA8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADC1CEE1CAD793100313AA8 /* SystemConfiguration.framework */; };
 		DADC1CF11CAD793B00313AA8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DADC1CF01CAD793B00313AA8 /* libz.tbd */; };
 		DADC1CF31CAD794800313AA8 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DADC1CF21CAD794800313AA8 /* libsqlite3.tbd */; };
+		DAFA2A101CEB07B100774060 /* tabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA2A0F1CEB07B100774060 /* tabbarVC.swift */; };
+		DAFA2A121CEB081900774060 /* navVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFA2A111CEB081900774060 /* navVC.swift */; };
+		DAFC09CF1CEB171A0066D7C3 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFC09CD1CEB171A0066D7C3 /* user.png */; };
+		DAFC09D01CEB171A0066D7C3 /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFC09CE1CEB171A0066D7C3 /* photo.png */; };
+		DAFC09D21CEB1CF30066D7C3 /* khoyai.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFC09D11CEB1CF30066D7C3 /* khoyai.png */; };
+		DAFC09D61CEB1FC20066D7C3 /* Artboard 1.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFC09D51CEB1FC20066D7C3 /* Artboard 1.png */; };
+		DAFC09D81CEB22820066D7C3 /* Artboard 2.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFC09D71CEB22820066D7C3 /* Artboard 2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +95,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA4A72881CEA34DD00B41999 /* sightsee.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sightsee.jpeg; path = ../../../../Downloads/sightsee.jpeg; sourceTree = "<group>"; };
+		DA4A728A1CEACF1100B41999 /* uploadvc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = uploadvc.swift; sourceTree = "<group>"; };
 		DA5212CD1CDC7F51004EB951 /* homevc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homevc.swift; sourceTree = "<group>"; };
 		DA5212CF1CDC7F7B004EB951 /* headervc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = headervc.swift; sourceTree = "<group>"; };
 		DA5212D11CDC80D2004EB951 /* cellpic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cellpic.swift; sourceTree = "<group>"; };
@@ -121,6 +132,13 @@
 		DADC1CEE1CAD793100313AA8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DADC1CF01CAD793B00313AA8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		DADC1CF21CAD794800313AA8 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		DAFA2A0F1CEB07B100774060 /* tabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tabbarVC.swift; sourceTree = "<group>"; };
+		DAFA2A111CEB081900774060 /* navVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = navVC.swift; sourceTree = "<group>"; };
+		DAFC09CD1CEB171A0066D7C3 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user.png; path = ../../../user.png; sourceTree = "<group>"; };
+		DAFC09CE1CEB171A0066D7C3 /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = photo.png; path = ../../../photo.png; sourceTree = "<group>"; };
+		DAFC09D11CEB1CF30066D7C3 /* khoyai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = khoyai.png; path = ../../../khoyai.png; sourceTree = "<group>"; };
+		DAFC09D51CEB1FC20066D7C3 /* Artboard 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Artboard 1.png"; path = "../../../Artboard 1.png"; sourceTree = "<group>"; };
+		DAFC09D71CEB22820066D7C3 /* Artboard 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Artboard 2.png"; path = "../../../Artboard 2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,8 +216,14 @@
 			children = (
 				DA7D5F0C1CDCF6C00096773F /* ara.png */,
 				DA7D5F081CDCCF390096773F /* 621-131018032747.jpg */,
+				DAFC09CD1CEB171A0066D7C3 /* user.png */,
+				DAFC09CE1CEB171A0066D7C3 /* photo.png */,
+				DAFC09D51CEB1FC20066D7C3 /* Artboard 1.png */,
+				DAFC09D11CEB1CF30066D7C3 /* khoyai.png */,
 				DA7D5F091CDCCF390096773F /* rcfAEh.gif */,
+				DAFC09D71CEB22820066D7C3 /* Artboard 2.png */,
 				DAB319FE1CA7F2ED009282DC /* Screen Shot 2559-03-20 at 20.07.53.png */,
+				DA4A72881CEA34DD00B41999 /* sightsee.jpeg */,
 				DAB319E71CA65850009282DC /* resetPasswordVC.swift */,
 				DAB319D11CA652C9009282DC /* AppDelegate.swift */,
 				DAB319D31CA652C9009282DC /* ViewController.swift */,
@@ -212,6 +236,9 @@
 				DA5212D11CDC80D2004EB951 /* cellpic.swift */,
 				DAB319E51CA65829009282DC /* signUpVC.swift */,
 				DAB319E31CA6580A009282DC /* signInVC.swift */,
+				DA4A728A1CEACF1100B41999 /* uploadvc.swift */,
+				DAFA2A0F1CEB07B100774060 /* tabbarVC.swift */,
+				DAFA2A111CEB081900774060 /* navVC.swift */,
 			);
 			path = ProjectSE;
 			sourceTree = "<group>";
@@ -362,12 +389,18 @@
 			files = (
 				DAB7B3BC1CE4F0E7006C5248 /* Info.plist in Resources */,
 				DAB319DC1CA652C9009282DC /* LaunchScreen.storyboard in Resources */,
+				DAFC09D21CEB1CF30066D7C3 /* khoyai.png in Resources */,
 				DA7D5F0B1CDCCF390096773F /* rcfAEh.gif in Resources */,
+				DAFC09D81CEB22820066D7C3 /* Artboard 2.png in Resources */,
+				DA4A72891CEA34DD00B41999 /* sightsee.jpeg in Resources */,
 				DAB319FF1CA7F2ED009282DC /* Screen Shot 2559-03-20 at 20.07.53.png in Resources */,
 				DA7D5F0D1CDCF6C00096773F /* ara.png in Resources */,
+				DAFC09CF1CEB171A0066D7C3 /* user.png in Resources */,
+				DAFC09D61CEB1FC20066D7C3 /* Artboard 1.png in Resources */,
 				DAB319F81CA67351009282DC /* Main.storyboard in Resources */,
 				DAB319D91CA652C9009282DC /* Assets.xcassets in Resources */,
 				DA7D5F0A1CDCCF390096773F /* 621-131018032747.jpg in Resources */,
+				DAFC09D01CEB171A0066D7C3 /* photo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,12 +434,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA4A728B1CEACF1100B41999 /* uploadvc.swift in Sources */,
 				DAB7B39D1CE4F049006C5248 /* signUpVC.swift in Sources */,
 				DA5212D01CDC7F7B004EB951 /* headervc.swift in Sources */,
 				DAB319D41CA652C9009282DC /* ViewController.swift in Sources */,
+				DAFA2A101CEB07B100774060 /* tabbarVC.swift in Sources */,
 				DAB319E41CA6580A009282DC /* signInVC.swift in Sources */,
 				DA5212D21CDC80D2004EB951 /* cellpic.swift in Sources */,
 				DAB319D21CA652C9009282DC /* AppDelegate.swift in Sources */,
+				DAFA2A121CEB081900774060 /* navVC.swift in Sources */,
 				DAB319E81CA65850009282DC /* resetPasswordVC.swift in Sources */,
 				DA5212CE1CDC7F51004EB951 /* homevc.swift in Sources */,
 			);

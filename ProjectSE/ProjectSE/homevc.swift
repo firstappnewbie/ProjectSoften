@@ -17,49 +17,72 @@ class homevc: UICollectionViewController {
     var picArray = [PFFile]()
     var uuidArray = [String]()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         collectionView?.backgroundColor = .whiteColor()
        
-        self.navigationItem.title = PFUser.currentUser()?.username?.uppercaseString
+        self.navigationItem.title = PFUser.currentUser()?.username?.lowercaseString
 
         //pull to refresh
         refresher = UIRefreshControl()
         refresher.addTarget(self, action: "refresh", forControlEvents: UIControlEvents.ValueChanged)
         collectionView?.addSubview(refresher)
+        
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "uploaded", name: "uploaded", object: nil)
+        
         loadPost()
     }
     func refresh()
     {
         collectionView?.reloadData()
     }
+    
+    func uploaded(){
+        //print("asdasdasdasdas")
+        loadPost()
+        refresh()
+    }
+    
    func loadPost(){
-      let query = PFUser.query()
-        query?.whereKey("username", equalTo: PFUser.currentUser()!.username!)
-        query?.limit = page
-        query?.findObjectsInBackgroundWithBlock ({ (objects:[PFObject]?, error:NSError?) -> Void in
+        //print("sssssssssssss")
+        //let query = PFUser.query()
+        let query = PFQuery(className: "posts")
+        query.whereKey("username", equalTo: PFUser.currentUser()!.username!)
+        query.limit = page
+        query.findObjectsInBackgroundWithBlock ({ (objects:[PFObject]?, error:NSError?) -> Void in
         
+            
         if error == nil{
+                self.uuidArray.removeAll(keepCapacity: false)
+                self.picArray.removeAll(keepCapacity: false)
             
             for object in objects!{
-                self.uuidArray.append(object.valueForKey("username") as! String)
-                self.picArray.append(object.valueForKey("ava1") as! PFFile)
+            
+                self.uuidArray.append(object.valueForKey("uuid") as! String)
+                self.picArray.append(object.valueForKey("pic") as! PFFile)
             }
             self.collectionView?.reloadData()
         }
+        else{
+            print(error!.localizedDescription)
+            }
         
         })
     }
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return picArray.count * 6
+        return picArray.count 
     }
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! cellpic
         
-        picArray[0].getDataInBackgroundWithBlock { (data:NSData?, error:NSError?) -> Void in
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath )as! cellpic
+        
+        picArray[indexPath.row].getDataInBackgroundWithBlock { (data:NSData?, error:NSError?) -> Void in
+            
             if error == nil{
                 cell.picImg.image = UIImage(data: data!)
                 
@@ -70,15 +93,16 @@ class homevc: UICollectionViewController {
         }
         return cell
     }
+    
     override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
         
         let header = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader, withReuseIdentifier: "Header", forIndexPath: indexPath ) as! headervc
         
-        header.Fullname.text = (PFUser.currentUser()?.objectForKey("fullname") as? String)?.uppercaseString
+        header.Fullname.text = (PFUser.currentUser()?.objectForKey("fullname") as? String)?.lowercaseString
         header.webtxt.text = PFUser.currentUser()?.objectForKey("Contact") as? String
         header.webtxt.sizeToFit()
         
-        let avaQuery = PFUser.currentUser()?.objectForKey("ava")    as! PFFile
+        let avaQuery = PFUser.currentUser()?.objectForKey("ava") as! PFFile
         avaQuery.getDataInBackgroundWithBlock { (data:NSData?, error:NSError?) -> Void in
             header.avaImg.image = UIImage(data: data!)
             
@@ -111,6 +135,19 @@ class homevc: UICollectionViewController {
         })
         return header
 
+    }
+    
+    @IBAction func logout(sender: AnyObject) {
+        
+        PFUser.logOutInBackgroundWithBlock { (error:NSError?) -> Void in
+            NSUserDefaults.standardUserDefaults().removeObjectForKey("username")
+            NSUserDefaults.standardUserDefaults().synchronize()
+            
+            let signin = self.storyboard?.instantiateViewControllerWithIdentifier("signInVC") as! signInVC
+            let appdelegate : AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            appdelegate.window?.rootViewController = signin
+            
+        }
     }
     // MARK: UICollectionViewDelegate
 

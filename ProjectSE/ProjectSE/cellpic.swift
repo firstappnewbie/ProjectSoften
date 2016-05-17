@@ -12,5 +12,4 @@ class cellpic: UICollectionViewCell {
     @IBOutlet weak var picImg: UIImageView!
     
     
-    
 }

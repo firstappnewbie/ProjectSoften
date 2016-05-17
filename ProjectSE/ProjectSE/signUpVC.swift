@@ -114,27 +114,21 @@ class signUpVC: UIViewController ,UIImagePickerControllerDelegate,UINavigationCo
         
         else{
             
-        
-        let user = PFUser()
-        user.username = usernameTxt.text?.lowercaseString
-        user.email = emailTxt.text?.lowercaseString
-        user.password = passwordTxt.text?.lowercaseString
-        user["fullname"] = fullnameTxt.text?.lowercaseString
-        user["Contact"] = braTxt.text?.lowercaseString
-        user["followings"] = braTxt.text?.lowercaseString
-
-        user["posts"] = braTxt.text?.lowercaseString
-        user["pictures"] = braTxt.text?.lowercaseString
-
+            let user = PFUser()
+            user.username = usernameTxt.text?.lowercaseString
+            user.email = emailTxt.text?.lowercaseString
+            user.password = passwordTxt.text?.lowercaseString
+            user["fullname"] = fullnameTxt.text?.lowercaseString
+            user["Contact"] = braTxt.text?.lowercaseString
+            user["followings"] = braTxt.text?.lowercaseString
+            
+            user["posts"] = braTxt.text?.lowercaseString
+            user["pictures"] = braTxt.text?.lowercaseString
+            //user["uuid"] = "1"
        
         let avaData = UIImageJPEGRepresentation(avaImg.image!, 0.5)
-        let avaData1 = UIImageJPEGRepresentation(avaImg.image!, 0.5)
-        
-        let ava1 = PFFile (name: "rcfAEh.gif", data:avaData1!)
-        user["ava1"] = ava1
-        
-        let avafile = PFFile (name: "Screen Shot 2559-03-20 at 20.07.53.png", data:avaData!)
-        user["ava"] = avafile
+        let ava = PFFile (name: "rcfAEh.gif", data:avaData!)
+        user["ava"] = ava
         
 
         
