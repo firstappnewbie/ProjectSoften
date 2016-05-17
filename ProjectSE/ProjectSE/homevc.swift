@@ -118,11 +118,11 @@ class homevc: UICollectionViewController {
             }
         })
         
-        let pictures = PFUser.query()
-        pictures?.whereKey("pictures", equalTo: PFUser.currentUser()!.username!)
-        pictures?.countObjectsInBackgroundWithBlock({ (count:Int32, error:NSError?) -> Void in
+        let pictures = PFQuery(className: "posts")
+        pictures.whereKey("username", equalTo: PFUser.currentUser()!.username!)
+        pictures.countObjectsInBackgroundWithBlock({ (count:Int32, error:NSError?) -> Void in
             if error == nil{
-                header.pictures.text = "\(count+3)"
+                header.pictures.text = "\(count)"
             }
         })
         

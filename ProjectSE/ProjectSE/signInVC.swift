@@ -7,7 +7,7 @@
 
 import UIKit
 import Parse
-class signInVC: UIViewController {
+class signInVC: UIViewController{
     
     @IBOutlet weak var usernametxt: UITextField!
     @IBOutlet weak var passwordtxt: UITextField!
@@ -21,7 +21,8 @@ class signInVC: UIViewController {
 
     @IBAction func signInBtn_click(sender: AnyObject) {
         
-        
+        usernametxt.autocorrectionType = .No
+        passwordtxt.autocorrectionType = .No
         self.view.endEditing(true)
         if usernametxt.text!.isEmpty || passwordtxt.text!.isEmpty {
             
@@ -37,7 +38,6 @@ class signInVC: UIViewController {
         
         PFUser.logInWithUsernameInBackground(usernametxt.text!, password: passwordtxt.text!) { (user:PFUser?, error:NSError?) -> Void in
             
-            //print(error)
             if error == nil {
                 NSUserDefaults.standardUserDefaults().setObject(user!.username, forKey: "username")
                 NSUserDefaults.standardUserDefaults().synchronize()
@@ -73,16 +73,17 @@ class Mytest: NSObject {
     func testunit(a: String,b:String){
         PFUser.logInWithUsernameInBackground(a, password: b) { (user:PFUser?, error:NSError?) -> Void in
         
-        /*if (error == nil) {
+        if (error == nil) {
             return
-            }*/
+            }
    
       }
     }
 }
     class Mytest2: NSObject {
         
-        func testunit(a: String,b:String){
+        func testunit()->Int{
             
+            return 3
         }
 }

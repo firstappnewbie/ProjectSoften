@@ -75,6 +75,10 @@
 		DAFC09D21CEB1CF30066D7C3 /* khoyai.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFC09D11CEB1CF30066D7C3 /* khoyai.png */; };
 		DAFC09D61CEB1FC20066D7C3 /* Artboard 1.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFC09D51CEB1FC20066D7C3 /* Artboard 1.png */; };
 		DAFC09D81CEB22820066D7C3 /* Artboard 2.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFC09D71CEB22820066D7C3 /* Artboard 2.png */; };
+		DAFC09DA1CEB895F0066D7C3 /* test.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DAFC09D91CEB895F0066D7C3 /* test.jpeg */; };
+		DAFC09DC1CEB89660066D7C3 /* 13220152_10206684054647680_1070128014_n.png-2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DAFC09DB1CEB89660066D7C3 /* 13220152_10206684054647680_1070128014_n.png-2.jpeg */; };
+		DAFC09DE1CEB8ADA0066D7C3 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFC09DD1CEB8ADA0066D7C3 /* star.png */; };
+		DAFC09E01CEB8C800066D7C3 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = DAFC09DF1CEB8C800066D7C3 /* star.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +143,10 @@
 		DAFC09D11CEB1CF30066D7C3 /* khoyai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = khoyai.png; path = ../../../khoyai.png; sourceTree = "<group>"; };
 		DAFC09D51CEB1FC20066D7C3 /* Artboard 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Artboard 1.png"; path = "../../../Artboard 1.png"; sourceTree = "<group>"; };
 		DAFC09D71CEB22820066D7C3 /* Artboard 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Artboard 2.png"; path = "../../../Artboard 2.png"; sourceTree = "<group>"; };
+		DAFC09D91CEB895F0066D7C3 /* test.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = test.jpeg; path = ../../../../Downloads/test.jpeg; sourceTree = "<group>"; };
+		DAFC09DB1CEB89660066D7C3 /* 13220152_10206684054647680_1070128014_n.png-2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "13220152_10206684054647680_1070128014_n.png-2.jpeg"; path = "../../../../Downloads/13220152_10206684054647680_1070128014_n.png-2.jpeg"; sourceTree = "<group>"; };
+		DAFC09DD1CEB8ADA0066D7C3 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = ../../../star.png; sourceTree = "<group>"; };
+		DAFC09DF1CEB8C800066D7C3 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = ../../../star.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,9 +222,13 @@
 		DAB319D01CA652C9009282DC /* ProjectSE */ = {
 			isa = PBXGroup;
 			children = (
+				DAFC09DD1CEB8ADA0066D7C3 /* star.png */,
 				DA7D5F0C1CDCF6C00096773F /* ara.png */,
+				DAFC09D91CEB895F0066D7C3 /* test.jpeg */,
 				DA7D5F081CDCCF390096773F /* 621-131018032747.jpg */,
+				DAFC09DB1CEB89660066D7C3 /* 13220152_10206684054647680_1070128014_n.png-2.jpeg */,
 				DAFC09CD1CEB171A0066D7C3 /* user.png */,
+				DAFC09DF1CEB8C800066D7C3 /* star.png */,
 				DAFC09CE1CEB171A0066D7C3 /* photo.png */,
 				DAFC09D51CEB1FC20066D7C3 /* Artboard 1.png */,
 				DAFC09D11CEB1CF30066D7C3 /* khoyai.png */,
@@ -396,10 +408,14 @@
 				DAB319FF1CA7F2ED009282DC /* Screen Shot 2559-03-20 at 20.07.53.png in Resources */,
 				DA7D5F0D1CDCF6C00096773F /* ara.png in Resources */,
 				DAFC09CF1CEB171A0066D7C3 /* user.png in Resources */,
+				DAFC09DE1CEB8ADA0066D7C3 /* star.png in Resources */,
 				DAFC09D61CEB1FC20066D7C3 /* Artboard 1.png in Resources */,
+				DAFC09E01CEB8C800066D7C3 /* star.png in Resources */,
+				DAFC09DA1CEB895F0066D7C3 /* test.jpeg in Resources */,
 				DAB319F81CA67351009282DC /* Main.storyboard in Resources */,
 				DAB319D91CA652C9009282DC /* Assets.xcassets in Resources */,
 				DA7D5F0A1CDCCF390096773F /* 621-131018032747.jpg in Resources */,
+				DAFC09DC1CEB89660066D7C3 /* 13220152_10206684054647680_1070128014_n.png-2.jpeg in Resources */,
 				DAFC09D01CEB171A0066D7C3 /* photo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

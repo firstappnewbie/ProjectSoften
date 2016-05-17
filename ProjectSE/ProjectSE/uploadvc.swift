@@ -49,9 +49,14 @@ class uploadvc: UIViewController, UIImagePickerControllerDelegate , UINavigation
         
     }
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        
         picImg.image = info[UIImagePickerControllerEditedImage] as?  UIImage
         self.dismissViewControllerAnimated(true, completion: nil)
-        
+        //let width = UIScreen.mainScreen().bounds.width
+
+        picImg.frame = CGRectMake(20,128,70,70)
+        picImg.layer.cornerRadius = picImg.frame.size.width / 2
+        picImg.clipsToBounds = true
         Buttonupload.enabled = true
         Buttonupload.backgroundColor = UIColor(red: 52.0/255.0, green: 169.0/255.0, blue: 255.0/255.0, alpha: 1)
         let zoomTap = UITapGestureRecognizer(target: self, action: "zoomImg")

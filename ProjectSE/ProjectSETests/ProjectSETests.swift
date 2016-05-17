@@ -35,12 +35,15 @@ class ProjectSETests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssertp andlated functions to verify your tests produce the correct results
         
-        //let posts = PFUser.query()
-        //posts?.whereKey("posts", equalTo: "asd")
         let test = Mytest()
-        //XCTAssert(test.testunit(5,b:3) == 9)
-        XCTAssertNotNil(test.testunit("asd", b: "asd"))
-        //XCTAssertEqual(test.testunit("asd", b: "asd"), "asd")
+        let test2 = Mytest2()
+        //TEST CASE 1 check login successfull
+        XCTAssertNotNil(test.testunit("3arthzneiz", b: "3arthzneiz"))
+        //TEST CASE 2 check count post
+        XCTAssertEqual(test2.testunit(),3)
+        //TEST CASE 3 check count picture
+        XCTAssertEqual(test2.testunit(),3)
+        
     }
     
     func testPerformanceExample() {

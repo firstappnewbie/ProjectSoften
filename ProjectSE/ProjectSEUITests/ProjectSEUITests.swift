@@ -114,15 +114,13 @@ class ProjectSEUITests: XCTestCase {
         deleteKey.tap()
         usernameTextField4.typeText("theimagecc@gmail.com")
         app.buttons["SignUp"].tap()
+        //expectationForPredicate(exists, evaluatedWithObject: alert, handler: nil)
+        //waitForExpectationsWithTimeout(20, handler: nil)
         
-        
-       
-        expectationForPredicate(exists, evaluatedWithObject: alert, handler: nil)
-        waitForExpectationsWithTimeout(40, handler: nil)
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         //TEST CASE 4 CHECK ERROR
         XCTAssertFalse(app.alerts["Error"].exists)
-        
+     
     }
     
 }
