@@ -27,7 +27,7 @@ class headervc: UICollectionReusableView {
     
     @IBOutlet weak var button: UIButton!
 
-
+    //set up pic size
     override func awakeFromNib() {
         //let width = UIScreen.mainScreen().bounds.width
         //avaImg.frame = CGRectMake(width / 16, width / 16, width / 4, width / 4)

@@ -92,12 +92,13 @@ class signUpVC: UIViewController ,UIImagePickerControllerDelegate,UINavigationCo
     func hidekeyboardtap(recognizer:UITapGestureRecognizer){
         self.view.endEditing(true)
     }
+    //button click
     @IBAction func signUpBtn(sender: AnyObject) {
         print("sign up press")
         //dissmiss keyboard
         self.view.endEditing(true)
         
-        
+        //check error input
         if (usernameTxt.text!.isEmpty || passwordTxt.text!.isEmpty || repeatTxt.text!.isEmpty ||
             emailTxt.text!.isEmpty || fullnameTxt.text!.isEmpty || braTxt.text!.isEmpty){
                 let alert = UIAlertController(title: "Please", message: "fill all field", preferredStyle: UIAlertControllerStyle.Alert)
@@ -113,7 +114,7 @@ class signUpVC: UIViewController ,UIImagePickerControllerDelegate,UINavigationCo
         }
         
         else{
-            
+            //add data to database
             let user = PFUser()
             user.username = usernameTxt.text?.lowercaseString
             user.email = emailTxt.text?.lowercaseString
@@ -132,7 +133,7 @@ class signUpVC: UIViewController ,UIImagePickerControllerDelegate,UINavigationCo
         
 
         
-        
+        //register success
         user.signUpInBackgroundWithBlock { (success:Bool, error:NSError?) -> Void in
             if success {
                 print("registered")

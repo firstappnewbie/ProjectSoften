@@ -51,6 +51,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    //Switch Page ja
     func login(){
         let username : String? = NSUserDefaults.standardUserDefaults().stringForKey("username")
         

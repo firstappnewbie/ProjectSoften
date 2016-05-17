@@ -11,18 +11,14 @@ import Parse
 class homevc: UICollectionViewController {
 
     var refresher : UIRefreshControl!
-    
     var page : Int = 10
-    
     var picArray = [PFFile]()
     var uuidArray = [String]()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         collectionView?.backgroundColor = .whiteColor()
-       
         self.navigationItem.title = PFUser.currentUser()?.username?.lowercaseString
 
         //pull to refresh
@@ -32,7 +28,7 @@ class homevc: UICollectionViewController {
         
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "uploaded", name: "uploaded", object: nil)
-        
+        //load post
         loadPost()
     }
     func refresh()
@@ -93,7 +89,7 @@ class homevc: UICollectionViewController {
         }
         return cell
     }
-    
+    //query data from mongodb
     override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
         
         let header = collectionView.dequeueReusableSupplementaryViewOfKind(UICollectionElementKindSectionHeader, withReuseIdentifier: "Header", forIndexPath: indexPath ) as! headervc
